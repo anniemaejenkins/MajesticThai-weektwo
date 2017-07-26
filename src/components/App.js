@@ -3,6 +3,27 @@ import logo from './../logo.svg';
 import './../styles/App.css';
 
 class App extends Component {
+constructor(props){
+  super(props);
+
+  this.state = {
+    menu: [],
+  };
+}
+
+
+componentDidMount(){
+  fetch('http://tiny-lasagna-server.herokuapp.com/collections/reactthaimenu')
+  .then(results => results.json())
+  .then(responseData => {
+    this.setState({menu: responseData.results})
+  })
+  .catch((error) => {
+    console.log("Error with Fetching : ", error);
+  });
+}
+
+
   render() {
     return (
       <div className="App">
