@@ -23,7 +23,7 @@ export default class BaseLayout extends Component{
     .then((result) => {
       result.json().then((response) => {
         this.setState({menu: response[0]});
-        console.log(this.state.menu.Entrees);
+        console.log(this.state.menu);
       });
     });
   }
