@@ -17,7 +17,8 @@ constructor(props){
 // but result isn't information we can read so we have to use .json which returns another promise
 // we assign that json info the name response and then set the state of menu to the data in response
 componentDidMount(){
-  fetch('http://tiny-lasagna-server.herokuapp.com/collections/reactthaimenu').then((result) => {
+  fetch('http://tiny-lasagna-server.herokuapp.com/collections/reactthaimenu')
+  .then((result) => {
     result.json().then((response) => {
       this.setState({menu: response[0]});
       console.log(this.state.menu.Entrees);
