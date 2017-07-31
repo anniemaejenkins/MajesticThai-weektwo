@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './../logo.svg';
 import './../styles/App.css';
 
+import BaseLayout from './BaseLayout.js';
+
 class App extends Component {
 constructor(props){
   super(props);
@@ -35,6 +37,8 @@ componentDidMount(){
           <h2>Welcome to React</h2>
         </div>
         <div className="fetchdata">
+
+        <div>{BaseLayout}</div>
 
         </div>
 
