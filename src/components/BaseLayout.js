@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import Dessert from './dessert.js';
 import Entree from './entree.js';
 import Appetizer from './appetizer.js';
+import Navigation from './Navigation.js';
 
 export default class BaseLayout extends Component{
   constructor(props){
@@ -34,9 +35,8 @@ export default class BaseLayout extends Component{
   render(){
     return(
     <div>
-    <Dessert/>
-    <Appetizer/>
-    <Entree/>
+      <Navigation />
+      {this.props.children}
     </div>
     );
   }
