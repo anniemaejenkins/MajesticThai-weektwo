@@ -7,7 +7,7 @@ export default class Navigation extends Component {
   }
   render(){
     return(
-      <div>
+      <div className="navBar">
 
         <div>
           <button>
@@ -19,24 +19,24 @@ export default class Navigation extends Component {
 
         <div>
           <button>
-            <NavLink to="/appetizer">
-              Appetizers
+            <NavLink to="/about">
+              About
             </NavLink>
           </button>
         </div>
 
         <div>
           <button>
-            <NavLink to="/entree">
-              Entrees
+            <NavLink to="/contact">
+              Contact
             </NavLink>
           </button>
         </div>
 
         <div>
           <button>
-            <NavLink to="/dessert">
-              Desserts
+            <NavLink to="/menu">
+              Menu
             </NavLink>
           </button>
         </div>

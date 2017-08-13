@@ -7,20 +7,22 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import App from './components/App.js';
 import BaseLayout from './components/BaseLayout.js';
-import Appetizer from './components/appetizer.js';
-import Dessert from './components/dessert.js';
-import Entree from './components/entree.js';
+import About from './components/About.js';
+import Contact from './components/Contact.js';
+import Menu from './components/Menu.js';
 
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
   <BrowserRouter>
+    <BaseLayout>
     <Switch>
       <Route exact path="/" component={App} />
-      <Route path="/appetizer" component={Appetizer} />
-      <Route path="/dessert" component={Dessert} />
-      <Route path="/entree" component={Entree} />
+      <Route path="/about" component={About} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/menu" component={Menu} />
     </Switch>
+    </BaseLayout>
   </BrowserRouter>
   ,
    document.getElementById('root')
