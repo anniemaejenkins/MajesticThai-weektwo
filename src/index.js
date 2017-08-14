@@ -13,6 +13,8 @@ import Menu from './components/Menu.js';
 
 import registerServiceWorker from './registerServiceWorker';
 
+let order = [];
+
 ReactDOM.render(
   <BrowserRouter>
     <BaseLayout>
@@ -20,7 +22,7 @@ ReactDOM.render(
       <Route exact path="/" component={App} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
-      <Route path="/menu" component={Menu} />
+      <Route path="/menu" render={ (props) => <Menu { ...props } order={ order } /> } />
     </Switch>
     </BaseLayout>
   </BrowserRouter>
