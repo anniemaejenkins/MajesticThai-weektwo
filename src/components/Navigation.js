@@ -38,6 +38,14 @@ export default class Navigation extends Component {
           </button>
         </div>
 
+        <div>
+          <button>
+            <NavLink to="/order">
+              Order
+            </NavLink>
+          </button>
+        </div>
+
       </div>
     )
   }

@@ -9,8 +9,7 @@ export default class Menu extends Component{
       menu: {
         Appetizers: [],
         Entrees: [],
-        Desserts: [],
-        prices: []
+        Desserts: []
       }
     };
   }
@@ -21,7 +20,7 @@ export default class Menu extends Component{
   // but result isn't information we can read so we have to use .json which returns another promise
   // we assign that json info the name response and then set the state of menu to the data in response
   componentDidMount(){
-    console.log('props', this.props);
+    // console.log('props', this.props);
     fetch('https://tiny-lasagna-server.herokuapp.com/collections/reactthaimenu')
     .then((result) => {
       result.json().then((response) => {
@@ -31,8 +30,10 @@ export default class Menu extends Component{
     });
   }
     render(){
+
+      // let menuItems = this.state.menu[this.state.category].map ...
       let appetizers = this.state.menu.Appetizers.map((item, index) => {
-        console.log("item", item);
+        // console.log("item", item);
         return <MenuItem key={index} item={item} order={ this.props.order }/>
       })
       let entrees = this.state.menu.Entrees.map((item, index) => {

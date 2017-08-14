@@ -10,10 +10,14 @@ import BaseLayout from './components/BaseLayout.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';
 import Menu from './components/Menu.js';
+import Order from './components/Order.js';
 
 import registerServiceWorker from './registerServiceWorker';
 
-let order = [];
+let order = {
+  items: [],
+  total: 0
+}
 
 ReactDOM.render(
   <BrowserRouter>
@@ -23,6 +27,7 @@ ReactDOM.render(
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/menu" render={ (props) => <Menu { ...props } order={ order } /> } />
+      <Route path="/order" render={ (props) => <Order { ...props} order={ order } /> } />
     </Switch>
     </BaseLayout>
   </BrowserRouter>

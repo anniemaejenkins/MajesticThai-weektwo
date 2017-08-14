@@ -12,7 +12,7 @@ export default class MenuItem extends Component{
   addItem(item) {
     console.log('item', item);
     let order = this.props.order;
-    order.push(item);
+    order.items.push(item);
   }
 
   render(){
