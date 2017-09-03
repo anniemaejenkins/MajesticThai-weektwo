@@ -34,31 +34,30 @@ export default class Menu extends Component{
       // let menuItems = this.state.menu[this.state.category].map ...
       let appetizers = this.state.menu.Appetizers.map((item, index) => {
         // console.log("item", item);
-        return <MenuItem key={index} item={item} order={ this.props.order }/>
+        return <div className="appInfo"><MenuItem key={index} item={item} order={ this.props.order } /></div>
       })
       let entrees = this.state.menu.Entrees.map((item, index) => {
-        return <MenuItem key={index} item={item} order={ this.props.order } />
+        return <div className="entreeInfo"><MenuItem key={index} item={item} order={ this.props.order } /></div>
       })
       let desserts = this.state.menu.Desserts.map((item, index) => {
-        return <MenuItem key={index} item={item} order={ this.props.order } />
+        return <div className="dessertInfo"><MenuItem key={index} item={item} order={ this.props.order } /></div>
       })
       return(
-        <div>
-          <div>
+        <div className="menu">
+          <div className="appetizers">
             <h3>Appetizers</h3>
-            <p>{ appetizers }</p>
+            <p className="appItem">{ appetizers }</p>
           </div>
-          <div>
+          <div className="entrees">
             <h3>Entrees</h3>
-            { entrees }
+            <p className="entreeItem">{ entrees }</p>
           </div>
-          <div>
+          <div className="desserts">
             <h3>Desserts</h3>
-            { desserts }
+            <p className="dessertItem">{ desserts }</p>
           </div>
         </div>
 
-        // { this.state.show === 'menu' ? <Menu /> : <Order />}
       );
     }
 }

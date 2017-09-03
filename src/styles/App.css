@@ -1,3 +1,185 @@
+*{
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Handlee', cursive;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Handlee'), url(https://fonts.googleapis.com/css?family=Handlee) format('woff2');
+}
+
+
+/****** homepage *******/
 .App {
+  padding-top: 90px;
   text-align: center;
+  background-image: url('./img/mysticthaihomepage.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+.navBar{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  width: 100%;
+  padding-top: 20px;
+  background-color: rgb(145, 127, 112);
+}
+.navButton{
+  border: none;
+  background: none;
+}
+.navLink:visited{
+  color: rgb(47, 33, 20);
+}
+.navLink:hover{
+  color: rgb(255, 255, 255);
+}
+
+.name{
+  margin: 0;
+  font-family: 'Handlee';
+  font-size: 80px;
+}
+.hours{
+  font-family: 'Handlee';
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+/***** about *****/
+
+.about{
+  font-family: 'Handlee';
+  background-color: rgb(47, 33, 20);
+  height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  line-height: 30px;
+}
+.title{
+  font-size: 60px;
+  margin: 0;
+  padding: 50px 25px 25px;
+}
+.par3{
+  margin-bottom: 50px;
+}
+.food{
+  height: 200px;
+  width: 300px;
+  margin-left: 50px;
+}
+
+/****** contact ******/
+
+.contact{
+  font-family: 'Handlee';
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(47, 33, 20);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.conInfo{
+  background-color: rgba(145, 127, 112, 0.5);
+  padding: 15px;
+  width: 800px;
+}
+
+/****** menu ******/
+
+.menu{
+  background-color: rgb(47, 33, 20);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Handlee';
+
+}
+.appetizers{
+  padding-top: 75px;
+}
+.appInfo{
+  background-color: rgba(145, 127, 112, 0.5);
+  border-radius: 5px;
+  width: 400px;
+  padding: 10px;
+  margin: 15px;
+}
+.appItem{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.entreeInfo{
+  background-color: rgba(145, 127, 112, 0.5);
+  border-radius: 5px;
+  width: 400px;
+  padding: 10px;
+  margin: 15px;
+}
+.entreeItem{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.dessertInfo{
+  background-color: rgba(145, 127, 112, 0.5);
+  border-radius: 5px;
+  width: 400px;
+  padding: 10px;
+  margin: 15px;
+}
+.dessertItem{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+/****** order ******/
+.order{
+  background-color: rgb(47, 33, 20);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  height: 100vh;
+  font-family: 'Handlee';
+}
+.orderTitle{
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+.orderItem{
+  background-color: rgba(145, 127, 112, 0.5);
+  border-radius: 5px;
+  width: 400px;
+  padding: 10px;
+  margin: 15px;
+}
+.orderInfo{
+  list-style: none;
+  font-size: 18px;
+}
+.orderList{
+  margin: 10px;
+}
+.total{
+  background-color: rgba(145, 127, 112, 0.5);
+  border-radius: 5px;
+  height: 200px;
+  width: 400px;
+  padding: 75px;
+  margin: 15px;
+}
+.orderContainer{
+  display: flex;
+  justify-content: space-around;
 }

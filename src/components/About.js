@@ -3,15 +3,39 @@ import React, { Component } from 'react';
 export default class About extends Component{
   render(){
     return(
-      <div>
-        <h1>Welcome to Majestic Thai</h1>
-        <p>At Majestic Thai, we have served authentic Thai cuisine at our family-owned
-        restaurant in the Greater Greenville area for over 10 years.</p>
-        <p>While our menu consists of traditional Thai meals, our chefs add
-        their own creativity periodically to keep fans and newcomers alike coming back
-        for another experience.</p>
-        <p>We prepare our meals fresh paired with imported ingredients from Thailand
-        so you know you are experiencing authentic Thai food. We hope you enjoy!</p>
+      <div className="about">
+        <h1 className="title">What We Do</h1>
+        <p className="par1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+        </p>
+        <p className="par2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p className="par3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <div className="foodPics">
+          <img className="food" src={require("../styles/img/chicken-spring-rolls.jpg")} alt=""/>
+          <img className="food" src={require("../styles/img/KanomJeeb.jpg")} alt=""/>
+          <img className="food" src={require("../styles/img/panang-curry.jpg")} alt=""/>
+        </div>
       </div>
     )
   }

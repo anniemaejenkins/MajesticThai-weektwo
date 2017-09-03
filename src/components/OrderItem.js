@@ -10,14 +10,14 @@ export default class OrderItem extends Component{
   render(){
     let orderItems = this.props.order.items.map(function(item, index) {
       return (
-        <li key={index}>
+        <li className="orderInfo" key={index}>
           <p>{ item.dish }</p>
           <p>{ item.price }</p>
         </li>
       )
     })
     return(
-      <ul>
+      <ul className="orderList">
         { orderItems }
       </ul>
     );

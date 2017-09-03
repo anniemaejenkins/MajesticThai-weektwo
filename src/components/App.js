@@ -5,8 +5,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Majestic Thai</h1>
-      <div>
+        <h1 className="name">Majestic Thai</h1>
+      <div className="hours">
         <h3>Hours of Operation</h3>
         <p>Mon-Fri:</p>
         <p>11AM-11PM</p>

@@ -7,40 +7,40 @@ export default class Navigation extends Component {
       <div className="navBar">
 
         <div>
-          <button>
-            <NavLink to="/">
+          <button className="navButton">
+            <NavLink className="navLink" to="/">
               Home
             </NavLink>
           </button>
         </div>
 
         <div>
-          <button>
-            <NavLink to="/about">
+          <button className="navButton">
+            <NavLink className="navLink" to="/about">
               About
             </NavLink>
           </button>
         </div>
 
         <div>
-          <button>
-            <NavLink to="/contact">
+          <button className="navButton">
+            <NavLink className="navLink" to="/contact">
               Contact
             </NavLink>
           </button>
         </div>
 
         <div>
-          <button>
-            <NavLink to="/menu">
+          <button className="navButton">
+            <NavLink className="navLink" to="/menu">
               Menu
             </NavLink>
           </button>
         </div>
 
         <div>
-          <button>
-            <NavLink to="/order">
+          <button className="navButton">
+            <NavLink className="navLink" to="/order">
               Order
             </NavLink>
           </button>
